@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ajout d'une police Google plus sympa -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">GAMA<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="a-propos.html">Mon Profil</a></li>
+                <li><a href="portfolio.html">Mes Projets</a></li>
+                <li><a href="contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Héros Dynamique -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tag">Étudiant en Développement</span>
+            <h1>Je transforme mes idées en <span class="highlight">réalité digitale</span>.</h1>
+            <p>Bienvenue sur mon portfolio, je suis intéressé par le développement web. Actuellement à la recherche
+                d'une opportunité en stage ou en alternance.</p>
+            <div class="hero-buttons">
+                <a href="portfolio.html" class="btn btn-primary">Voir mes projets</a>
+                <a href="contact.html" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Présentation rapide -->
+    <section class="container">
+        <div class="intro-text">
+            <h2>En quelques mots</h2>
+            <p>Étudiant en BUT Informatique, je suis passionné par le développement d'applications performantes et
+                centrées sur l'utilisateur. Curieux et rigoureux, ce portfolio retrace mon parcours, mes compétences et
+                les projets qui ont marqué ma formation.</p>
+        </div>
+    </section>
+
+    <!-- Section Aperçu des derniers projets -->
+    <section class="container section-green-light">
+        <h2>Dernières Réalisations</h2>
+        <div class="grid-3">
+            <div class="card project-card">
+                <div class="card-img-container">
+                    <img src="images/code-pokemon.png" alt="Jeu Pokémon"
+                        style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px 8px 0 0;">
+                </div>
+                <h3>Jeu Pokémon (Java/FX)</h3>
+                <p>Jeu complet avec logique OOP et interface graphique animée JavaFX.</p>
+                <a href="projet-pokemon.html" class="link-arrow">Voir le détail &rarr;</a>
+            </div>
+            <div class="card project-card">
+                <div class="card-img-container">
+                    <img src="images/bottomup-home.png" alt="Plateforme BottomUp"
+                        style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px 8px 0 0;">
+                </div>
+                <h3>Projet : BottomUp</h3>
+                <p>Plateforme participative de débat et de vote (SAE S3).</p>
+                <a href="projet-web.html" class="link-arrow">Voir le détail &rarr;</a>
+            </div>
+            <div class="card project-card">
+                <div class="card-img-container">
+                    <img src="images/schema-bd.png" alt="Gestion de Données"
+                        style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px 8px 0 0;">
+                </div>
+                <h3>Gestion de Données</h3>
+                <p>Modélisation et exploitation de bases de données SQL / PostgreSQL.</p>
+                <a href="projet-data.html" class="link-arrow">Voir le détail &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SaksoukMahdi</p>
+    </footer>
+
+</body>
+
+</html>
