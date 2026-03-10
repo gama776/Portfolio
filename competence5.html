@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence 5 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <header>
+        <nav class="navbar">
+            <div class="logo">GAMA<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">Mon Profil</a></li>
+                <li><a href="portfolio.html">Mes Projets</a></li>
+                <li><a href="portfolio-apprentissage.html" class="active">Portfolio d'apprentissage</a></li>
+                <li><a href="contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Compétence 5 : Conduire un projet</h1>
+        <p>Analyse de besoins, faisabilité et mise en œuvre transversale de la démarche de suivi.</p>
+    </section>
+
+    <section class="container" style="flex: 1; max-width: 900px;">
+        <div class="back-link-container" style="margin-bottom: 20px;">
+            <a href="portfolio-apprentissage.html" class="btn btn-secondary">&larr; Retour aux compétences</a>
+        </div>
+
+        <details class="accordion-item">
+            <summary>AC 1 : Identifier les processus présents dans une organisation en vue d’améliorer les systèmes
+                d’information</summary>
+            <div class="accordion-content">
+                <p>Savoir repérer comment une entité fonctionne afin de bâtir un système informatique qui optimise sa
+                    fluidité quotidienne.</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Projet Gestion de Données :</strong> Le point de départ a été d'identifier et comprendre
+                        les processus métier d'un client fictif qui enregistrait auparavant et difficilement tout "à la
+                        main" sur Excel. Cette analyse rigoureuse nous a guidés pour concevoir de zéro une base
+                        relationnelle parfaitement adaptée, enlevant instantanément les frictions et lourdeurs de son
+                        travail.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="accordion-item">
+            <summary>AC 2 : Formaliser les besoins du client et de l’utilisateur</summary>
+            <div class="accordion-content">
+                <p>Récolter et documenter officiellement les attentes pragmatiques et non-fonctionnelles d'un projet
+                    avant même d'écrire la première ligne de code.</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Projet BottomUp :</strong> L'analyse longue du cahier des charges, avec identification
+                        de chaque rôle (Organisateur de scrutins, utilisateur citoyen) afin de déterminer les
+                        permissions logicielles adéquates, et traduction en diagrammes et schémas d'itération (Sprint
+                        backlog, Use cases).</li>
+                    <li><strong>Jeu Pokémon (SAE 421) :</strong> L'obligation de respecter un modèle strict, ainsi
+                        qu'une documentation UML poussée (Diagrammes de classes, diagrammes de séquences) demandée par
+                        nos encadrants pour prouver que les règles du jeu officiel Pokémon seraient formellement suivies
+                        par l'architecture.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="accordion-item">
+            <summary>AC 3 : Identifier les critères de faisabilité d’un projet informatique</summary>
+            <div class="accordion-content">
+                <p>Évaluer lucidement les risques, le budget temps, et adapter l'ambition cible aux contraintes avérées
+                    tout au long du cycle de vie du projet.</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Nuit de l'Info (Hackathon) :</strong> Un exemple parfait : avec exactement 15h de
+                        contrainte de temps globale pour 6 personnes, nous avons évalué notre faisabilité et réduit le
+                        "Scope" à un MVP (Minimum Viable Product). Des concessions techniques sur l'architecture backend
+                        trop complexe ont dû être consenties à la hâte.</li>
+                    <li><strong>Jeu Pokémon :</strong> Par manque de temps sur le jalon de livraison final, nous avons
+                        évalué qu'il fallait restreindre les implémentations de certains calculs de dégâts particuliers
+                        en assumant un périmètre plus réduit, mais entièrement fonctionnel dans les temps, plutôt
+                        qu'entamer de nouvelles classes que nous n'aurions pas eu le temps de tester.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="accordion-item">
+            <summary>AC 4 : Définir et mettre en œuvre une démarche de suivi de projet</summary>
+            <div class="accordion-content">
+                <p>Orchestrer le travail de l'intégralité d'une équipe et suivre l'avancement via des méthodologies
+                    reconnues dans l'industrie professionnelle.</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Méthodes Agiles / Mêlées (Profil et SAEs) :</strong> Pour la grande majorité de nos
+                        travaux de groupe de taille importante (le projet BottomUp de 6 semaines ou le Jeu Pokémon en
+                        binôme notamment), nous avons adopté et simulé des courtes réunions d'avancement, adoptant une
+                        démarche s'approchant de la méthode Agile/Scrum adaptée à notre rythme d'étudiant.</li>
+                    <li><strong>Outils de suivi :</strong> L'utilisation omniprésente de conteneurs et gestionnaire de
+                        version / dépôts <strong>Git</strong> (GitLab/GitHub) avec la définition de tâches via des
+                        outils Kanban, ce qui permet de créer des branches parallèles afin que tous les étudiants de
+                        l'équipe travaillent de concert sur le projet avec un suivi clair.</li>
+                </ul>
+            </div>
+        </details>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SaksoukMahdi</p>
+    </footer>
+</body>
+
+</html>

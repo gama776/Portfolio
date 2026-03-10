@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence 3 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <header>
+        <nav class="navbar">
+            <div class="logo">GAMA<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">Mon Profil</a></li>
+                <li><a href="portfolio.html">Mes Projets</a></li>
+                <li><a href="portfolio-apprentissage.html" class="active">Portfolio d'apprentissage</a></li>
+                <li><a href="contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Compétence 3 : Administrer des systèmes informatiques communicants complexes</h1>
+        <p>Conception, virtualisation et sécurisation des réseaux et applicatifs.</p>
+    </section>
+
+    <section class="container" style="flex: 1; max-width: 900px;">
+        <div class="back-link-container" style="margin-bottom: 20px;">
+            <a href="portfolio-apprentissage.html" class="btn btn-secondary">&larr; Retour aux compétences</a>
+        </div>
+
+        <details class="accordion-item">
+            <summary>AC 1 : Concevoir et développer des applications communicantes</summary>
+            <div class="accordion-content">
+                <p>Cette compétence s'est illustrée dans la création d'architectures liant client et serveur ou APIs
+                    distantes.</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Projet Nuit de l'Info :</strong> Dans le cadre du hackathon, j'ai développé toute la
+                        logique client du mini-jeu en JavaScript. La Game Loop asynchrone devait impérativement
+                        communiquer de manière rapide avec l'API PHP en backend via la fonction <code>fetch</code> pour
+                        mettre à jour le Leaderboard général en temps réel.</li>
+                    <li><strong>Projet BottomUp (SAE S3) :</strong> Conception de la liaison entre les formulaires
+                        Front-end (HTML/JS) et les contrôleurs PHP. L'application communicante devait recueillir des
+                        propositions de votes, les transmettre par le réseau au MVC et les stocker correctement.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="accordion-item">
+            <summary>AC 2 : Utiliser des serveurs et des services réseaux virtualisés</summary>
+            <div class="accordion-content">
+                <p>L'apprentissage essentiel du déploiement en contexte réel sur des environnements virtuels ou
+                    distants.</p>
+                <h4>Cours et Projets liés :</h4>
+                <ul>
+                    <li><strong>Réseaux et Virtualisation :</strong> À travers les TP, j'ai manipulé des machines
+                        virtuelles (VMware, VirtualBox) pour simuler des réseaux locaux d'entreprise et isoler les
+                        conteneurs d'application.</li>
+                    <li><strong>Projet BottomUp :</strong> L'hébergement et le déploiement du projet PHP/SQL ont
+                        nécessité l'utilisation et la configuration d'un serveur d'application Apache couplé à un SGBD
+                        distant pour assurer la disponibilité du service en réseau pour les clients du jeu de vote.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="accordion-item">
+            <summary>AC 3 : Sécuriser les services et données d’un système</summary>
+            <div class="accordion-content">
+                <p>Mettre en place des remparts contre la corruption des données ou des accès non autorisés
+                    (authentification, injections).</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Projet BottomUp :</strong> Implémentation complète de la sécurisation utilisateur.
+                        Utilisation stricte de <strong>requêtes SQL préparées</strong> via PDO pour contrer les
+                        injections SQL. Mise en place d'un système robuste de gestion de sessions en PHP avec le hachage
+                        des mots de passe dans la base de données.</li>
+                    <li><strong>Cours Cybersécurité :</strong> Concepts réseaux sur le paramétrage sécurisé de ports et
+                        notions de cybersécurité appliquées aux transferts de paquets et aux Bases de Données.</li>
+                </ul>
+            </div>
+        </details>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SaksoukMahdi</p>
+    </footer>
+</body>
+
+</html>

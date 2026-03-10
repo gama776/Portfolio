@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio d'Apprentissage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        .competence-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            min-height: calc(100vh - 80px - 80px);
+            /* Hauteur de l'écran moins header et footer */
+            gap: 20px;
+            padding: 40px 5%;
+            background-color: var(--bg-light);
+            margin: 0;
+        }
+
+        .btn-competence {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: white;
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid transparent;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn-competence:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 184, 148, 0.2);
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+            background-color: #fafffc;
+        }
+
+        /* Responsive : en colonne sur les petits écrans */
+        @media (max-width: 900px) {
+            .competence-container {
+                flex-direction: column;
+            }
+
+            .btn-competence {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">GAMA<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">Mon Profil</a></li>
+                <li><a href="portfolio.html">Mes Projets</a></li>
+                <li><a href="portfolio-apprentissage.html" class="active">Portfolio d'apprentissage</a></li>
+                <li><a href="contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="competence-container" style="flex: 1;">
+        <a href="competence3.html" class="btn-competence">
+            Compétence 3 :<br><br>Administrer des systèmes informatiques communicants complexes
+        </a>
+        <a href="competence4.html" class="btn-competence">
+            Compétence 4 :<br><br>Gérer des données de l’information
+        </a>
+        <a href="competence5.html" class="btn-competence">
+            Compétence 5 :<br><br>Conduire un projet
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SaksoukMahdi</p>
+    </footer>
+
+</body>
+
+</html>

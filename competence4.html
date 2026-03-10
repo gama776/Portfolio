@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence 4 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <header>
+        <nav class="navbar">
+            <div class="logo">GAMA<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">Mon Profil</a></li>
+                <li><a href="portfolio.html">Mes Projets</a></li>
+                <li><a href="portfolio-apprentissage.html" class="active">Portfolio d'apprentissage</a></li>
+                <li><a href="contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Compétence 4 : Gérer des données de l’information</h1>
+        <p>Modélisation, intégrité, restitution et manipulation de bases de données.</p>
+    </section>
+
+    <section class="container" style="flex: 1; max-width: 900px;">
+        <div class="back-link-container" style="margin-bottom: 20px;">
+            <a href="portfolio-apprentissage.html" class="btn btn-secondary">&larr; Retour aux compétences</a>
+        </div>
+
+        <details class="accordion-item">
+            <summary>AC 1 : Optimiser les modèles de données de l’entreprise</summary>
+            <div class="accordion-content">
+                <p>Créer des schémas de base de données structurés, normés, et éliminer toute redondance pour garantir
+                    la fluidité des systèmes.</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Projet Gestion de Données (SAE BD) :</strong> Conception du Modèle Conceptuel de Données
+                        (MCD) optimisé via le logiciel Looping. Transformation soignée en Modèle Logique de Données
+                        (MLD) pour obtenir une hiérarchisation fiable sans répétitions d'informations massives,
+                        facilitant drastiquement les futures requêtes d'analyse.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="accordion-item">
+            <summary>AC 2 : Assurer la confidentialité des données (intégrité et sécurité)</summary>
+            <div class="accordion-content">
+                <p>Garantir que les données stockées respectent les règles de gestion du client tout en bloquant toute
+                    manipulation malveillante ou erreur fonctionnelle.</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Projet Gestion de Données :</strong> Implémentation de plusieurs
+                        <strong>Triggers</strong> (déclencheurs) et contraintes (Clés Primaires / Clés Étrangères) sous
+                        Oracle/PostgreSQL afin de verrouiller la consistance en cascade à l'insertion et à la
+                        suppression d'une ligne.</li>
+                    <li><strong>Projet BottomUp :</strong> Gestion du rôle et des droits d'accès à la base de données
+                        (lecture, écriture, admin) couplée à l'anonymisation / hachage des informations sensibles des
+                        votants et des propositions.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="accordion-item">
+            <summary>AC 3 : Organiser la restitution de données à travers la programmation et la visualisation</summary>
+            <div class="accordion-content">
+                <p>Traiter les valeurs issues de la base de données ou de l'application et les afficher sous un format
+                    clair, intelligible et métier pour l'utilisateur final.</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Projet BottomUp :</strong> Restitution dynamique en PHP des résultats complexes de vote
+                        sous forme de listes et classements finaux (majoritaire et alternatif), rendant le scrutin
+                        directement lisible par le citoyen dans son navigateur.</li>
+                    <li><strong>Jeu Pokémon (SAE 421) :</strong> Restitution en temps réel des "Points de Vie" (PV), de
+                        la pioche, et des dégâts lors des combats sous forme de jauges, calculs et de textes interactifs
+                        rafraîchis via le front JavaFX.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="accordion-item">
+            <summary>AC 4 : Manipuler des données hétérogènes</summary>
+            <div class="accordion-content">
+                <p>Savoir intégrer, parser ou migrer des sources de données disparates pour les rassembler de façon
+                    cohésive.</p>
+                <h4>Projets liés :</h4>
+                <ul>
+                    <li><strong>Projet Gestion de Données (SAE BD) :</strong> Récupération de données brutes issues de
+                        volumineux fichiers Excel hétérogènes. Celles-ci ont dû être lues, nettoyées, formatées et
+                        importées en masse par le biais de scripts SQL pour peupler notre base relationnelle finale.
+                    </li>
+                    <li><strong>Projet Nuit de l'Info :</strong> Transmission hétérogène de données en format JSON
+                        (JavaScript) depuis le jeu vers un tableau associatif manipulable côté serveur (PHP) de façon
+                        fluide.</li>
+                </ul>
+            </div>
+        </details>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SaksoukMahdi</p>
+    </footer>
+</body>
+
+</html>
